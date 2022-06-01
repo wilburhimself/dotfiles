@@ -241,12 +241,19 @@ nmap("gTT", ":tab sb<cr>")
 
 require("plugins")
 
-if utils.file_exists(fn.expand("~/.vimrc_background")) then
-  g.base16colorspace = 256
-  cmd [[source ~/.vimrc_background]]
-end
+-- if utils.file_exists(fn.expand("~/.vimrc_background")) then
+--   g.base16colorspace = 256
+--   cmd [[source ~/.vimrc_background]]
+-- end
 
 cmd [[syntax on]]
+-- cmd [[
+-- let g:onedark_config = {
+--     \ 'style': 'warmer',
+-- \}
+-- colorscheme onedark
+-- ]]
+-- cmd [[colorscheme onedark]]
 cmd [[filetype plugin indent on]]
 -- make the highlighting of tabs and other non-text less annoying
 cmd [[highlight SpecialKey ctermfg=19 guifg=#333333]]

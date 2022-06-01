@@ -194,6 +194,8 @@ Plug("nvim-telescope/telescope-fzf-native.nvim", {["do"] = "make"})
 
 Plug "folke/trouble.nvim"
 
+Plug "navarasu/onedark.nvim"
+
 plugEnd()
 
 -- Once the plugins have been loaded, Lua-based plugins need to be required and started up
@@ -213,3 +215,4 @@ require("plugins.formatter")
 require("plugins.tabline")
 require("plugins.feline")
 require("plugins.startup")
+require("plugins.onedark")
