@@ -254,6 +254,8 @@ cmd [[syntax on]]
 -- colorscheme onedark
 -- ]]
 -- cmd [[colorscheme onedark]]
+vim.g.catppuccin_flavour = "mocha"
+cmd [[colorscheme catppuccin]]
 cmd [[filetype plugin indent on]]
 -- make the highlighting of tabs and other non-text less annoying
 cmd [[highlight SpecialKey ctermfg=19 guifg=#333333]]

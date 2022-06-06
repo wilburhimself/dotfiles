@@ -223,7 +223,7 @@ lsp_installer.on_server_ready(
 local signs = {Error = icons.error, Warning = icons.warning, Warn = icons.warning, Hint = icons.hint, Info = icons.hint}
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, {text = icon, texthl = hl})
+  vim.fn.sign_define(hl, {text = icon, texthl = hl, numhl = hl})
 end
 
 -- Set colors for completion items

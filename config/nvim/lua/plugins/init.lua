@@ -195,6 +195,7 @@ Plug("nvim-telescope/telescope-fzf-native.nvim", {["do"] = "make"})
 Plug "folke/trouble.nvim"
 
 Plug "navarasu/onedark.nvim"
+Plug("catppuccin/nvim", {["as"] = "catppuccin"})
 
 plugEnd()
 
@@ -213,6 +214,11 @@ require("plugins.treesitter")
 require("plugins.nvimtree")
 require("plugins.formatter")
 require("plugins.tabline")
-require("plugins.feline")
+require("plugins.catppuccin")
+require("feline").setup(
+  {
+    components = require("catppuccin.core.integrations.feline")
+  }
+)
 require("plugins.startup")
-require("plugins.onedark")
+-- require("plugins.onedark")
