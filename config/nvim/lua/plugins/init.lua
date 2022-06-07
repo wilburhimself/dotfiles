@@ -196,6 +196,7 @@ Plug "folke/trouble.nvim"
 
 Plug "navarasu/onedark.nvim"
 Plug("catppuccin/nvim", {["as"] = "catppuccin"})
+Plug "b0o/incline.nvim"
 
 plugEnd()
 
@@ -221,4 +222,11 @@ require("feline").setup(
   }
 )
 require("plugins.startup")
+require("incline").setup {
+  hide = {
+    cursorline = false,
+    focused_win = false,
+    only_win = true
+  }
+}
 -- require("plugins.onedark")
